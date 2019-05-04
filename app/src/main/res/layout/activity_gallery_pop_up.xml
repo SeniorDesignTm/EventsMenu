@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        tools:srcCompat="@tools:sample/avatars[3]" />
+
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Title"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Desc"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="buttonOnClick"
+        android:text="Add to Calendar"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:baselineAligned="false"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="buttonOnClick2"
+        android:text="View Calendar"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>
